@@ -3,7 +3,7 @@
 
 Bem-vindo ao repositório do NubankClone.js!
 
-Video de apresentação do porjeto: https://drive.google.com/file/d/1yNkB88mkCv2c-qJ961RIg2tXDw6vBuDA/view?usp=drive_link
+Video de apresentação do porjeto: (https://drive.google.com/file/d/1yNkB88mkCv2c-qJ961RIg2tXDw6vBuDA/view?usp=drive_link)
 
 ## Descrição
 
