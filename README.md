@@ -3,6 +3,8 @@
 
 Bem-vindo ao repositório do NubankClone.js!
 
+Video de apresentação do porjeto: https://drive.google.com/file/d/1yNkB88mkCv2c-qJ961RIg2tXDw6vBuDA/view?usp=drive_link
+
 ## Descrição
 
 Este projeto foi desenvolvido para prática e estudo individual, com o objetivo de aprimorar meus conhecimentos em desenvolvimento web e destacar minhas habilidades no mercado de trabalho. O projeto visa demonstrar minha autonomia, além de seguir boas práticas de programação.
