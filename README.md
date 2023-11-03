@@ -5,7 +5,9 @@ Bem-vindo ao repositório do NubankClone.js!
 
 ## Descrição
 
-Este repositório foi desenvolvido com o objetivo de aprimorar meus conhecimentos em desenvolvimento web e destacar minhas habilidades no mercado de trabalho. Todas as imagens utilizadas neste projeto foram obtidas na biblioteca [Pexels](https://www.pexels.com/pt-br/), onde não possuem direitos autorais. O projeto visa demonstrar minha autonomia como desenvolvedora, além de seguir boas práticas de programação.
+Este projeto foi desenvolvido para prática e estudo individual, com o objetivo de aprimorar meus conhecimentos em desenvolvimento web e destacar minhas habilidades no mercado de trabalho. O projeto visa demonstrar minha autonomia, além de seguir boas práticas de programação.
+
+Todas as imagens utilizadas neste projeto foram obtidas na biblioteca [Pexels](https://www.pexels.com/pt-br/). O projeto respeita as condições de uso estabelecidas pelo Pexels para imagens gratuitas.
 
 ## Tecnologias Utilizadas
 
