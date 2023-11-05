@@ -6,9 +6,12 @@ Bem-vindo ao repositório do NubankClone.js!
 Video de apresentação do porjeto: https://drive.google.com/file/d/1yNkB88mkCv2c-qJ961RIg2tXDw6vBuDA/view?usp=drive_link
 ## Descrição
 
-Este projeto foi desenvolvido para prática e estudo individual, com o objetivo de aprimorar meus conhecimentos em desenvolvimento web e destacar minhas habilidades no mercado de trabalho. O projeto visa demonstrar minha autonomia, além de seguir boas práticas de programação.
+O projeto foi desenvolvido de forma autônoma, usando JavaScript puro, com ênfase na criação dinâmica de elementos. Também utilizei Bootstrap e SASS para a estilização, focando em responsividade,  obtendo muito aprendizado ao inspecionar elementos, facilitando assim localização de erros no código e problemas de layout, encontrando informações sobre os elementos na página e as dúvidas que ainda não havia vivenciado.
+ Além disso, implementei um servidor API com Node.js para simular interações com o banco de dados,  o que enriqueceu minha experiência no desenvolvimento web. Escolhi clonar a interface principal do Nubank como  objetivo de desafiar minhas habilidades de programação e aprender a trabalhar com uma variedade de elementos. Este é apenas o primeiro de muitos projetos que pretendo compartilhar, pois acredito que essa é a melhor maneira de demonstrar meus conhecimentos, minha capacidade e autonomia.
 
-Todas as imagens utilizadas neste projeto foram obtidas na biblioteca [Pexels](https://www.pexels.com/pt-br/). O projeto respeita as condições de uso estabelecidas pelo Pexels para imagens gratuitas.
+Estou aberta a críticas e sugestões, se estas forem construtivas, pois acredito que o feedback é fundamental para o meu crescimento.
+Além disso, gostaria de enfatizar que as imagens utilizadas, assim como o áudio do vídeo neste projeto, foram obtidas da biblioteca [Pexels](https://www.pexels.com/pt-br). O projeto foi desenvolvido exclusivamente para fins de estudo e desenvolvimento pessoal.
+
 
 ## Tecnologias Utilizadas
 
