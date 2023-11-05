@@ -3,7 +3,7 @@
 
 Bem-vindo ao repositório do NubankClone.js!
 
-Video de apresentação do porjeto: https://drive.google.com/file/d/1yNkB88mkCv2c-qJ961RIg2tXDw6vBuDA/view?usp=drive_link
+Video de apresentação do projeto: https://drive.google.com/file/d/1yNkB88mkCv2c-qJ961RIg2tXDw6vBuDA/view?usp=drive_link
 ## Descrição
 
 O projeto foi desenvolvido de forma autônoma, usando JavaScript puro, com ênfase na criação dinâmica de elementos. Também utilizei Bootstrap e SASS para a estilização, focando em responsividade,  obtendo muito aprendizado ao inspecionar elementos, facilitando assim localização de erros no código e problemas de layout, encontrando informações sobre os elementos na página e as dúvidas que ainda não havia vivenciado.
