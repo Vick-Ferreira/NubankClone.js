@@ -100,7 +100,7 @@ fetch('http://localhost:3000/carroselCards')
     nextArrow: '#slick-next',
     responsive: [ //condições para as medias
     {
-      breakpoint: 2100,
+      breakpoint: 2600,
       settings: {
         slidesToShow: 5.5  // Número de slides a serem mostrados a partir de 1600
       }
@@ -238,6 +238,135 @@ fetch('http://localhost:3000/duplacard')
   });
 
 
+  //solicitação fetch para backgroud
+fetch('http://localhost:3000/backgroud')
+.then((resp) => resp.json())
+.then((data) => {
+  const backgroud = data.backgroud;
+
+  //criando cards
+
+  function renderizarBackgroud() {
+    const backgroudContainer = document.getElementById('backgroud');
+  
+    // Crie um conteiner para os cards com índices 1 e 2
+    const flexContainer = document.createElement('div');
+    flexContainer.className = 'flex-container';
+  
+    // Crie um container para o card com índice 3
+    const card3Container = document.createElement('div');
+    // Não atribua a classe 'carDu' ao container do índice 3
+  
+    //fazendo algo com cada item
+    data.forEach((item, index) => {
+      const containerCar = document.createElement('div');
+      containerCar.className = 'car';
+  
+      if (index === 1) {
+        containerCar.style.backgroundColor = '#820AD1';
+        containerCar.style.color = '#f5f5f5';
+        containerCar.classList.add('largurapersonalizadaCard');
+      } else if (index === 2) {
+        containerCar.style.backgroundColor = '#2F0549';
+        containerCar.style.color = '#f5f5f5';
+        containerCar.classList.add('largurapersonalizadaCard');
+      } else if (index === 0 ) {
+        containerCar.style.backgroundColor = '#f5f5f5';
+        containerCar.classList.add('index-0');
+      }else if( index === 3){
+        containerCar.style.backgroundColor = '#f5f5f5';
+      }
+      
+      const imgBg = document.createElement('img');
+      imgBg.src = item.img;
+      
+      if (index === 1 || index === 2) {
+        imgBg.classList.add('personalizadaImgBg');
+      } else {
+        imgBg.className = 'imgBg';
+      }
+   
+    
+      const containerConteudo = document.createElement('div');
+      containerConteudo.className = 'carConteudo';
+      const screenWidth = window.innerWidth;
+if (index === 1 || index === 2) {
+  if (screenWidth === 1100) {
+    containerConteudo.style.marginRight = '15em';
+  } else {
+    containerConteudo.classList.add('personalizadoconCarconteudo');
+  }
+} else {
+  containerConteudo.className = 'conDu';
+}
+  
+      const tituloDu = document.createElement('h1');
+      tituloDu.textContent = item.titulo;
+      tituloDu.className = 'tituloDu';
+  
+      if (index === 0 || index === 3) {
+        tituloDu.style.color = '#820AD1';
+      }
+  
+      const conDu = document.createElement('p');
+      conDu.textContent = item.conteudo;
+      conDu.className = 'conDu';
+
+  
+      const link = document.createElement('a');
+      link.href = item.link;
+      link.textContent = 'Saiba mais';
+      link.className = 'linkDu';
+  
+      const icone = document.createElement('i');
+      icone.innerHTML = '<i class="bi bi-arrow-right"></i>';
+  
+      if (index === 1 || index === 2) {
+        icone.className = 'iconeDu_branco';
+        link.className = 'linkDu_branco';
+      } else {
+        icone.className = 'icone';
+        link.className = 'linkDu';
+      }
+  
+      containerCar.appendChild(imgBg);
+      containerCar.appendChild(containerConteudo);
+      containerConteudo.appendChild(tituloDu);
+      containerConteudo.appendChild(conDu);
+      containerConteudo.appendChild(link);
+      containerConteudo.appendChild(icone);
+  
+      if (index === 1 || index === 2) {
+        //  cards  índices 1 e 2 sendo add ao flexContainer
+        flexContainer.appendChild(containerCar);
+      } else {
+        if (index === 0) {
+          // card com índice 0 add diretamente ao backgroudContainer
+          backgroudContainer.appendChild(containerCar);
+        } else if (index === 3) {
+          // card com índice 3 ao card3Container
+          card3Container.appendChild(containerCar);
+        }
+      }
+    });
+  
+    // Add flexContainer ao backgroudContainer após o loop
+    backgroudContainer.appendChild(flexContainer);
+    // Add o card3Container abaixo do flexContainer
+    backgroudContainer.appendChild(card3Container);
+  }
+
+  // função para renderizar os cartões
+  renderizarBackgroud();
+})
+.catch((error) => {
+  console.error('Erro durante a requisição:', error);
+});
+
+
+
+
+
   //solicitação fetch para dupla de cards
 fetch('http://localhost:3000/unico')
   .then((resp) => resp.json())
@@ -287,122 +416,6 @@ fetch('http://localhost:3000/unico')
   });
   
   
-
-//solicitação fetch para backgroud
-fetch('http://localhost:3000/backgroud')
-  .then((resp) => resp.json())
-  .then((data) => {
-    const backgroud = data.backgroud;
-
-    //criando cards
-
-    function renderizarBackgroud() {
-      const backgroudContainer = document.getElementById('backgroud');
-    
-      // Crie um conteiner para os cards com índices 1 e 2
-      const flexContainer = document.createElement('div');
-      flexContainer.className = 'flex-container';
-    
-      // Crie um container para o card com índice 3
-      const card3Container = document.createElement('div');
-      // Não atribua a classe 'carDu' ao container do índice 3
-    
-      //fazendo algo com cada item
-      data.forEach((item, index) => {
-        const containerCar = document.createElement('div');
-        containerCar.className = 'car';
-    
-        if (index === 1) {
-          containerCar.style.backgroundColor = '#820AD1';
-          containerCar.style.color = '#f5f5f5';
-          containerCar.classList.add('largurapersonalizadaCard');
-        } else if (index === 2) {
-          containerCar.style.backgroundColor = '#2F0549';
-          containerCar.style.color = '#f5f5f5';
-          containerCar.classList.add('largurapersonalizadaCard');
-        } else if (index === 0 ) {
-          containerCar.style.backgroundColor = '#f5f5f5';
-          containerCar.classList.add('index-0');
-        }else if( index === 3){
-          containerCar.style.backgroundColor = '#f5f5f5';
-        }
-        
-        const imgDu = document.createElement('img');
-        imgDu.src = item.img;
-        imgDu.className = 'imgDu';
-    
-        if (index === 1 || index === 2) {
-          var screenWidth = window.innerWidth;
-          if (screenWidth < 992) {
-            imgDu.style.width = '85%';
-          } else {
-            imgDu.className = 'imgDu';
-          }
-        }
-        const containerConteudo = document.createElement('div');
-        containerConteudo.className = 'carConteudo';
-    
-        const tituloDu = document.createElement('h1');
-        tituloDu.textContent = item.titulo;
-        tituloDu.className = 'tituloDu';
-    
-        if (index === 0 || index === 3) {
-          tituloDu.style.color = '#820AD1';
-        }
-    
-        const conDu = document.createElement('p');
-        conDu.textContent = item.conteudo;
-        conDu.className = 'conDu';
-    
-        const link = document.createElement('a');
-        link.href = item.link;
-        link.textContent = 'Saiba mais';
-        link.className = 'linkDu';
-    
-        const icone = document.createElement('i');
-        icone.innerHTML = '<i class="bi bi-arrow-right"></i>';
-    
-        if (index === 1 || index === 2) {
-          icone.className = 'iconeDu_branco';
-          link.className = 'linkDu_branco';
-        } else {
-          icone.className = 'icone';
-          link.className = 'linkDu';
-        }
-    
-        containerCar.appendChild(imgDu);
-        containerCar.appendChild(containerConteudo);
-        containerConteudo.appendChild(tituloDu);
-        containerConteudo.appendChild(conDu);
-        containerConteudo.appendChild(link);
-        containerConteudo.appendChild(icone);
-    
-        if (index === 1 || index === 2) {
-          //  cards  índices 1 e 2 sendo add ao flexContainer
-          flexContainer.appendChild(containerCar);
-        } else {
-          if (index === 0) {
-            // card com índice 0 add diretamente ao backgroudContainer
-            backgroudContainer.appendChild(containerCar);
-          } else if (index === 3) {
-            // card com índice 3 ao card3Container
-            card3Container.appendChild(containerCar);
-          }
-        }
-      });
-    
-      // Add flexContainer ao backgroudContainer após o loop
-      backgroudContainer.appendChild(flexContainer);
-      // Add o card3Container abaixo do flexContainer
-      backgroudContainer.appendChild(card3Container);
-    }
-
-    // função para renderizar os cartões
-    renderizarBackgroud();
-  })
-  .catch((error) => {
-    console.error('Erro durante a requisição:', error);
-  });
 
 
 
@@ -504,7 +517,7 @@ fetch('http://localhost:3000/CardCards')
       const descricao = document.createElement('p');
       descricao.textContent = item.conteudo;
       descricao.className = 'conteudoG';
-      descricao.style.fontWeight = '650';
+      descricao.style.fontWeight = '500';
 
       const link = document.createElement('a');
       link.href = item.link;

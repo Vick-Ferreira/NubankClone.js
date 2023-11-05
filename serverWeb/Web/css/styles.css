@@ -90,7 +90,7 @@
 }
 
 .btn-lg {
-  background-color: rgb(204, 204, 194);
+  background-color: #f5f5f5;
 }
 .btn-lg:hover {
   cursor: not-allowed;
@@ -156,7 +156,7 @@
   padding-bottom: 15px;
   width: 100%;
   overflow: hidden;
-  background-color: rgb(226, 230, 233);
+  background-color: #f5f5f5;
 }
 
 .img {
@@ -267,7 +267,7 @@
   font-size: 14px;
   color: #191919;
   font-weight: normal;
-  padding: 25px 20px 0 20px;
+  padding: 25px 15px 0 15px;
 }
 
 .icone {
@@ -306,7 +306,9 @@
   font-size: 20px;
 }
 
-.imgDu {
+.imgDu,
+.imgBg,
+.personalizadaImgBg {
   width: 100%;
   padding: 30px 0;
   display: block;
@@ -370,9 +372,6 @@
   .carDu .conDu {
     font-size: 24px;
   }
-  .imgDu {
-    max-width: 650px;
-  }
   .top-PainelInicio {
     padding-top: 9em;
   }
@@ -396,7 +395,9 @@
     justify-content: center;
     align-items: center;
   }
-  .imgDu {
+  .imgDu,
+  .imgBg,
+  .personalizadaImgBg {
     width: 425px;
     padding: 15px;
     margin: auto;
@@ -434,6 +435,12 @@
   }
   .carUnico {
     padding: 2em;
+  }
+  .imgDu, .imgBg {
+    margin: 0 !important;
+  }
+  .personalizadaImgBg {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -488,7 +495,11 @@
     padding: 5em;
   }
   .imgDu {
-    width: 90%;
+    margin: 5em;
+    width: 50%;
+  }
+  .imgBg {
+    width: 50%;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -496,6 +507,29 @@
     padding: 8em !important;
   }
   .carConteudo {
-    padding: 50px;
+    max-width: 700px;
+    margin: 5em;
+  }
+  .personalizadoconCarconteudo {
+    margin: 0 !important;
+  }
+  #elementosCards, #CardCards {
+    justify-content: center;
+  }
+  .meuH1,
+  .meuH1Black {
+    text-align: center;
+  }
+  .meulink {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .carConteudo {
+    margin: 10em;
+  }
+  .canDu {
+    font-size: 100px;
   }
 }/*# sourceMappingURL=styles.css.map */
