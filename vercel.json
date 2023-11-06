@@ -1,13 +1,15 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "start.js", 
-        "use": "@now/node" 
-      }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "start.js" } 
-    ]
-  }
-  
+  "builds": [
+    {
+      "src": "serverApi/db.json",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/serverApi/(.*)",
+      "dest": "serverApi/$1"
+    }
+  ]
+}
+

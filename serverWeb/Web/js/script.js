@@ -55,7 +55,7 @@ window.addEventListener("scroll", toggleScrollButton);
 
 
 // Solicitação fetch para carroselCards
-fetch('http://localhost:3000/carroselCards')
+fetch('https://json-seven-gules.vercel.app/carroselCards')
     .then((resp) => resp.json())
     .then((data) => {
         const carroselCards = data.carroselCards;
@@ -150,7 +150,7 @@ fetch('http://localhost:3000/carroselCards')
 
 
 //solicitação fetch para dupla de cards
-fetch('http://localhost:3000/duplacard')
+fetch('https://json-seven-gules.vercel.app/duplacard')
   .then((resp) => resp.json())
   .then((data) => {
     const duplacard = data.duplacard;
@@ -239,7 +239,7 @@ fetch('http://localhost:3000/duplacard')
 
 
   //solicitação fetch para backgroud
-fetch('http://localhost:3000/backgroud')
+fetch('hhttps://json-seven-gules.vercel.app/backgroud')
 .then((resp) => resp.json())
 .then((data) => {
   const backgroud = data.backgroud;
@@ -368,7 +368,7 @@ if (index === 1 || index === 2) {
 
 
   //solicitação fetch para dupla de cards
-fetch('http://localhost:3000/unico')
+fetch('https://json-seven-gules.vercel.app/unico')
   .then((resp) => resp.json())
   .then((data) => {
     const unico = data.unico;
@@ -420,7 +420,7 @@ fetch('http://localhost:3000/unico')
 
 
 //solicitação fetch para elementosCards  (Primeiro grupo de cards com rolagem horizontas (setas teclado))
-fetch('http://localhost:3000/elementosCards')
+fetch('https://json-seven-gules.vercel.app/elementosCards')
   .then((resp) => resp.json())
   .then((data) => {
     const elementosCards = data.elementosCards;
@@ -484,7 +484,7 @@ fetch('http://localhost:3000/elementosCards')
 
 
   //solicitação fetch para CardCards'  (Segudno grupo de cards com rolagem horizontas (setas teclado))
-fetch('http://localhost:3000/CardCards')
+fetch('https://json-seven-gules.vercel.app/cardCards')
 .then((resp) => resp.json())
 .then((data) => {
   const CardCards = data.CardCards; 
