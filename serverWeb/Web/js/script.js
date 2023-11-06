@@ -484,7 +484,7 @@ fetch('https://json-seven-gules.vercel.app/elementosCards')
 
 
   //solicitação fetch para CardCards'  (Segudno grupo de cards com rolagem horizontas (setas teclado))
-fetch('https://json-seven-gules.vercel.app/cardCards')
+fetch('https://json-seven-gules.vercel.app/cardCardsgit plu')
 .then((resp) => resp.json())
 .then((data) => {
   const CardCards = data.CardCards; 
