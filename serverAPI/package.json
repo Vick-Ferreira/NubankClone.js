@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json --port 3000",
-    "vercel-build": "npx prisma migrate deploy"
+    "start": "json-server --watch db.json --port 3000"
   },
   "keywords": [],
   "author": "",
