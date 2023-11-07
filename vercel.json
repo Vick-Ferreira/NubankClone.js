@@ -1,18 +1,11 @@
 {
-  "version": 2,
   "builds": [
-    {
-      "src": "serverweb/app.js",
-      "use": "@now/node"
-    },
-    {
-      "src": "serverApi/db.json",
-      "use": "@now/node"
-    }
+    { "src": "serverweb/app.js", "use": "@now/node" },
+    { "src": "serverApi/db.json", "use": "@now/node" }
   ],
   "routes": [
-    { "src": "/serverweb/(.*)", "dest": "serverweb/$1" },
-    { "src": "/serverApi/(.*)", "dest": "serverApi/$1" },
+    { "src": "/serverweb/(.*)", "dest": "serverweb/app.js" },
+    { "src": "/serverApi/(.*)", "dest": "serverApi/db.json" },
     { "src": "/(.*)", "dest": "serverweb/app.js" }
   ]
 }
