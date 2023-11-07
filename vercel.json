@@ -1,0 +1,15 @@
+{
+  "builds": [
+    {
+      "src": "serverApi/db.json",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/serverApi/(.*)",
+      "dest": "serverApi/$1"
+    }
+  ]
+}
+
