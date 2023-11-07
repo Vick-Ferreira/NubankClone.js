@@ -239,7 +239,7 @@ fetch('https://json-seven-gules.vercel.app/duplacard')
 
 
   //solicitação fetch para backgroud
-fetch('hhttps://json-seven-gules.vercel.app/backgroud')
+fetch('https://json-seven-gules.vercel.app/backgroud')
 .then((resp) => resp.json())
 .then((data) => {
   const backgroud = data.backgroud;
@@ -484,7 +484,7 @@ fetch('https://json-seven-gules.vercel.app/elementosCards')
 
 
   //solicitação fetch para CardCards'  (Segudno grupo de cards com rolagem horizontas (setas teclado))
-fetch('https://json-seven-gules.vercel.app/cardCardsgit plu')
+fetch('https://json-seven-gules.vercel.app/cardCards')
 .then((resp) => resp.json())
 .then((data) => {
   const CardCards = data.CardCards; 
