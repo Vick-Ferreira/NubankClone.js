@@ -1,11 +1,15 @@
 {
   "builds": [
-    { "src": "serverweb/app.js", "use": "@now/node" },
-    { "src": "serverApi/db.json", "use": "@now/node" }
+    { "src": "/serverweb/web", "use": "@vercel/static" },
+    { "src": "/serverApi", "use": "@now/node" }
   ],
   "routes": [
-    { "src": "/serverweb/(.*)", "dest": "serverweb/app.js" },
-    { "src": "/serverApi/(.*)", "dest": "serverApi/db.json" },
-    { "src": "/(.*)", "dest": "serverweb/app.js" }
+    { "handle": "filesystem" },
+    { "src": "/carroselCards ", "dest": "/serverApi/server.js" },
+    { "src": "/elementosCards ", "dest": "/serverApi/server.js" },
+    { "src": "/duplacard ", "dest": "/serverApi/server.js" },
+    { "src": "/unico ", "dest": "/serverApi/server.js" },
+    { "src": "/backgroud  ", "dest": "/serverApi/server.js" },
+    { "src": "/serverweb/web", "dest": "/index.html" }
   ]
 }
