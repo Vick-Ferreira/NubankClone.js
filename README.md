@@ -3,7 +3,7 @@
 
 Bem-vindo ao repositório do NubankClone.js!
 
-Video de apresentação do projeto: https://drive.google.com/file/d/1yNkB88mkCv2c-qJ961RIg2tXDw6vBuDA/view?usp=drive_link
+Video de apresentação do projeto: [https://drive.google.com/file/d/1J2QIrwhXAWF0SZbW14KyKrYZbQxqXOn5/view?usp=sharing](https://drive.google.com/file/d/1J2QIrwhXAWF0SZbW14KyKrYZbQxqXOn5/view)
 ## Descrição
 
 O projeto foi desenvolvido de forma autônoma, usando JavaScript puro, com ênfase na criação dinâmica de elementos. Também utilizei Bootstrap e SASS para a estilização, focando em responsividade,  obtendo muito aprendizado ao inspecionar elementos, facilitando assim localização de erros no código e problemas de layout, encontrando informações sobre os elementos na página e as dúvidas que ainda não havia vivenciado.
@@ -22,6 +22,7 @@ Além disso, gostaria de enfatizar que as imagens utilizadas, assim como o áudi
 ## Como Rodar o Projeto
 
 Para executar o projeto, siga estas etapas:
+link projeto compactado : https://drive.google.com/file/d/1gC9NczVKJA8x1ig1nkelK0t0fUBmkfKc/view?usp=sharing
 
 1. Navegue até a pasta "serverAPI" e execute o comando:
 
